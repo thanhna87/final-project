@@ -6,7 +6,7 @@ import { FooterComponent } from "../../common-component/footer/footer.component"
     selector: 'app-about',
     standalone: true,
     templateUrl: './about.component.html',
-    styleUrl: './about.component.css',
+    styleUrls: ['./about.component.css','../../../css/bootstrap.min.css'],
     imports: [NavigationComponent, FooterComponent]
 })
 export class AboutComponent {

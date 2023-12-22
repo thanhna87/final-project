@@ -6,9 +6,10 @@ import { FooterComponent } from "../../common-component/footer/footer.component"
     selector: 'app-product',
     standalone: true,
     templateUrl: './product.component.html',
-    styleUrl: './product.component.css',
+    styleUrls: ['./product.component.css','../../../css/bootstrap.min.css'],
     imports: [NavigationComponent, FooterComponent]
 })
 export class ProductComponent {
+    
 
 }

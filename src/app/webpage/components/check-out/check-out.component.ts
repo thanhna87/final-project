@@ -6,7 +6,7 @@ import { FooterComponent } from "../../common-component/footer/footer.component"
     selector: 'app-check-out',
     standalone: true,
     templateUrl: './check-out.component.html',
-    styleUrl: './check-out.component.css',
+    styleUrls: ['./check-out.component.css','../../../css/bootstrap.min.css'],
     imports: [NavigationComponent, FooterComponent]
 })
 export class CheckOutComponent {
