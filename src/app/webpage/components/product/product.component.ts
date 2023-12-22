@@ -10,6 +10,9 @@ import { FooterComponent } from "../../common-component/footer/footer.component"
     imports: [NavigationComponent, FooterComponent]
 })
 export class ProductComponent {
-    
+    products: any[] = [] //binding this data to HTML
 
+  formSearch = {
+    id: ""
+  }
 }
