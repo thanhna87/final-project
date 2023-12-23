@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+//noi viet code login, xu ly bussiness login
 export class ProductService {
   
   constructor(private http: HttpClient) { }
@@ -17,5 +19,9 @@ export class ProductService {
 
   getProductById(id:string): Observable<any> {
     return this.http.get('https://fakestoreapi.com/products/'+id)
+  }
+
+  deleteProduct(id:string): Observable<any>{
+    return this.http.delete('https://fakestoreapi.com/products/'+id)
   }
 }
