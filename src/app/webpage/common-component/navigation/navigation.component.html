@@ -19,7 +19,22 @@
                 <a routerLink="/checkout" routerLinkActive="active" class="nav-link">Checkout</a>
             </li>
             <li class="nav-item">
+                <a routerLink="/convertcurrency" routerLinkActive="active" class="nav-link">Convert Currency</a>
+            </li>
+            <li class="nav-item">
                 <a routerLink="/about" routerLinkActive="active" class="nav-link">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <!-- (các mục menu hiện tại) -->
+        </ul>
+        <ul class="navbar-nav">
+            <!-- Thêm link Logout -->
+            <li class="nav-item">
+                <a class="nav-link" (click)="logOut()">Logout</a>
             </li>
         </ul>
     </div>

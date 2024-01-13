@@ -24,4 +24,26 @@ export class ProductService {
   deleteProduct(id:string): Observable<any>{
     return this.http.delete('https://fakestoreapi.com/products/'+id)
   }
+
+  addProduct(product:any):Observable<any>{
+    return this.http.post<any>('https://fakestoreapi.com/products', product)    
+  }
+
+  /**
+   * 
+   * @param product 
+   */
+  updateProductById(product:any):Observable<any>{
+    return this.http.put('https://fakestoreapi.com/products/'+product.id, product)    
+  }
+
+  /**docstring
+   * Copyright 2023 Dec 30
+   * Service get all categoried from API
+   * developed by thanhnh
+   * @returns string[]
+   */
+  getAllCategories():Observable<string[]>{
+    return this.http.get<string[]>('https://fakestoreapi.com/products/categories')
+  }
 }
